@@ -1,0 +1,53 @@
+body {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc-container {
+    border: 5px solid black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 400px;
+    height: 500px;
+}
+
+.calc-display {
+    border: 3px solid black;
+    text-align: right;
+    flex: 1;
+}
+
+.calc-buttons {
+    border: 1px solid black;
+    flex: 5 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.row-one,
+.row-two,
+.row-three,
+.row-four,
+.row-five {
+    border: 1px solid black;
+    flex: 1;
+    display: flex;
+}
+
+button {
+    border-right: 1px solid black;
+    cursor: pointer;
+    flex: 1;
+}
+
+button:hover {
+    filter: brightness(0.9);
+}
+
+.buttons.bigger {
+    flex: 2.2;
+}
