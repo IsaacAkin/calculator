@@ -17,7 +17,16 @@ body {
 
 .calc-display {
     border: 3px solid black;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.calc-display p {
+    margin: 0;
+    padding: 0;
     text-align: right;
+    font-size: 70px;
     flex: 1;
 }
 
