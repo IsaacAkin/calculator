@@ -38,3 +38,23 @@ function operate(operator, firstNumber, secondNumber) {
         return division(firstNumber, secondNumber);
     }
 }
+
+// Returns the result of the calculation
+function calculate() {
+    signs.forEach((sign) => {
+        sign.addEventListener("click", () => {
+            firstNumber = display.textContent;
+            operator = sign.textContent;
+            display.textContent = "";
+        })
+    })
+
+    equals.addEventListener("click", () => {
+        secondNumber = display.textContent;
+
+        const result = operate(operator, firstNumber, secondNumber);
+        display.textContent = result;
+    })
+}
+
+calculate();
