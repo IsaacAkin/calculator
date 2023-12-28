@@ -57,4 +57,22 @@ function calculate() {
     })
 }
 
+// Populates the display with the numbers clicked
+function populateDisplay() {
+    digits.forEach((digit) => {
+        digit.addEventListener("click", () => {
+            display.textContent += digit.textContent;
+        });
+    });
+}
+
+// Clears the display
+function clearDisplay() {
+    clear.addEventListener("click", () =>{
+        display.textContent = "";
+    });
+}
+
+populateDisplay();
+clearDisplay();
 calculate();
